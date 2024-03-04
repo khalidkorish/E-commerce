@@ -5,43 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-.hamburger{
+
+.hamburger {
     width: 5%;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .bar1,
-  .bar2,
-  .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #fff;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {
-    opacity: 0;
-  }
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
-  /*  */
-body {
-    font-family: "Poppins", sans-serif;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
 }
 
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+}
 
 .container {
     width: 100%;
@@ -66,11 +65,13 @@ nav {
     color: white;
     padding: 10px 50px;
 }
+
 .navTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -84,10 +85,6 @@ nav {
     text-decoration: none;
     color: #fff;
 }
-
-
-
-
 
 #search-box {
     min-width: 500px;
@@ -138,9 +135,7 @@ nav {
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-template-rows: 25px 25px;
-    grid-template-areas:
-        "img name"
-        "img price";
+    grid-template-areas: "img name" "img price";
 }
 
 .search-result img {
@@ -171,7 +166,6 @@ nav {
 .menuItem {
     color: lightgray;
     cursor: pointer;
-
     font-weight: 400;
     transition: all 0.5s ease-in-out;
 }
@@ -231,6 +225,7 @@ nav {
     color: rgb(150, 50, 50);
     font-weight: 900;
 }
+
 footer {
     background-color: #333;
     color: #fff;
@@ -257,3 +252,23 @@ footer {
     margin-right: 10px;
     font-size: 1.5rem;
 }
+/* Add CSS for responsive design */
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        padding: 0 20px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Add CSS for responsive design */
+

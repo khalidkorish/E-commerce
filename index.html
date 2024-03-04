@@ -1,106 +1,97 @@
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <title>Home</title>
-    </head>
-    <body>
-        <header>
-            
-            <div class="container">
-                <div class="logo">Sword</div>
-                <nav>
-                    <div class="hamburger " onclick="myFunction(this)">
-                        <div class="bar1"></div>
-                          <div class="bar2"></div>
-                          <div class="bar3"></div>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                   
-                </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Sword</div>
+            <nav>
+                <div class="hamburger" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav>
+        <div class="navTop">
+            <div class="navItem">
+                <!-- <img src="imgs/sneakers.png" alt="" /> -->
             </div>
-        </header>
-        <nav>
-            <div class="navTop">
-                <div class="navItem">
-                    <!-- <img src="imgs/sneakers.png" alt="" /> -->
-                </div>
-                <div class="navItem" id="search-box">
-                    <input type="text" placeholder="Search..." class="search-input" />
-                    <div class="search-icon">
-                        <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                    </div>
-                </div>
-                <div class="navItem cart">
-                    <div class="cart">
-                        <i class="fa-solid fa-shopping-cart" id="shopping-cart-icon"></i>
-                    </div>
+            <div class="navItem" id="search-box">
+                <input type="text" placeholder="Search..." class="search-input" />
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
                 </div>
             </div>
-            
-            <div class="navBottom">
-                <h3 class="menuItem selectedItem">AIR FORCE</h3>
-                <h3 class="menuItem">JORDAN</h3>
-                <h3 class="menuItem">BLAZER</h3>
-                <h3 class="menuItem">CRATER</h3>
-                <h3 class="menuItem">HIPPIE</h3>
-            </div>
-        </nav>
-
-        <div id="slider">
-            <div class="sliderWrapper">
-                <div class="sliderItem">
-                    <img src="imgs/air.png" alt="" class="sliderImg" />
-                    <div class="slideBg"></div>
-                </div>
-                <div class="sliderItem">
-                    <img src="imgs/jordan.png" alt="" class="sliderImg" />
-                    <div class="slideBg"></div>
-                </div>
-                <div class="sliderItem">
-                    <img src="imgs/blazer.png" alt="" class="sliderImg" />
-                    <div class="slideBg"></div>
-                </div>
-                <div class="sliderItem">
-                    <img src="imgs/crater.png" alt="" class="sliderImg" />
-                    <div class="slideBg"></div>
-                </div>
-                <div class="sliderItem">
-                    <img src="imgs/hippie.png" alt="" class="sliderImg" />
-                    <div class="slideBg"></div>
+            <div class="navItem cart">
+                <div class="cart">
+                    <i class="fa-solid fa-shopping-cart" id="shopping-cart-icon"></i>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Contact US</a></li>
-                    </ul>
-                </div>
-                <div class="social-icons">
-                    <!-- Replace the following placeholder content with actual social media links -->
-                    <a href="https://www.facebook.com/kh.ayman404">Facebook</a>
-                    <a href="https://twitter.com/khalid_korish">Twitter</a>
-                    <a href="https://www.linkedin.com/in/khalidkorish/">linkedin</a>
-                </div>
-            </div>
-        </footer>
-    </body>
+        <div class="navBottom">
+            <h3 class="menuItem selectedItem">AIR FORCE</h3>
+            <h3 class="menuItem">JORDAN</h3>
+            <h3 class="menuItem">BLAZER</h3>
+            <h3 class="menuItem">CRATER</h3>
+            <h3 class="menuItem">HIPPIE</h3>
+        </div>
+    </nav>
 
+    <div id="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="imgs/air.png" alt="" class="sliderImg" />
+                <div class="slideBg"></div>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/jordan.png" alt="" class="sliderImg" />
+                <div class="slideBg"></div>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/blazer.png" alt="" class="sliderImg" />
+                <div class="slideBg"></div>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/crater.png" alt="" class="sliderImg" />
+                <div class="slideBg"></div>
+            </div>
+            <div class="sliderItem">
+                <img src="imgs/hippie.png" alt="" class="sliderImg" />
+                <div class="slideBg"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <!-- Replace the following placeholder content with actual social media links -->
+                <a href="https://www.facebook.com/kh.ayman404">Facebook</a>
+                <a href="https://twitter.com/khalid_korish">Twitter</a>
+                <a href="https://www.linkedin.com/in/khalidkorish/">linkedin</a>
+            </div>
+        </div>
+    </footer>
     <script src="app.js"></script>
+</body>
 </html>
